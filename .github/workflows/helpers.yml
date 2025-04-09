@@ -45,7 +45,7 @@ jobs:
       target_image: 'ghcr.io/${{ github.repository_owner }}/o28m/postgresql'
       source_build_args: |
         POSTGRESQL_VERSION=16
-      target_architecture: 'linux/arm64'
+      target_architecture: 'linux/amd64, linux/arm64'
       target_registry: 'ghcr.io'
       target_registry_username: ${{ github.actor }}
     secrets:
