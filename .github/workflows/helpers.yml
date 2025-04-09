@@ -42,7 +42,7 @@ jobs:
     with:
       source_repository: '${{ github.repository }}'
       source_dockerfile: 'build/helpers/Dockerfile.postgresql'
-      target_image: 'ghcr.io/${{ github.repository_owner }}/o28m/postgresql'
+      target_image: 'ghcr.io/${{ github.repository_owner }}/o28m/postgresql:new'
       source_build_args: |
         POSTGRESQL_VERSION=16
       target_architecture: 'linux/amd64, linux/arm64'
