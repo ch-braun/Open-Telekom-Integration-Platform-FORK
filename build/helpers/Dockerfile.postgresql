@@ -2,5 +2,5 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-ARG POSTGRESQL_VERSION=postgres:16-alpine
+ARG POSTGRESQL_VERSION=16-alpine
 FROM postgresql:${POSTGRESQL_VERSION}
