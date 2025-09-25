@@ -44,6 +44,8 @@ jobs:
       source_repository: 'telekom/gateway-issuer-service-go'
       source_branch: 'v2.2.1'
       source_dockerfile: 'Dockerfile.multi-stage'
+      source_build_args: |
+        GO_VERSION=1.23.12
       target_image: 'ghcr.io/${{ github.repository_owner }}/o28m/gateway-issuer-service-go:2.2.1'
       target_architecture: 'linux/amd64'
       target_registry: 'ghcr.io'
